@@ -5,10 +5,10 @@ public:
         int longest=0;
         for(auto num :st){
             if(st.find(num-1)==st.end()){
-                int curr=num;
+                
                 int count=1;
-                while(st.find(curr+1)!=st.end()){
-                    curr++;
+                while(st.find(num+1)!=st.end()){
+                    num++;
                     count++;
                 }
                 longest=max(count,longest);
